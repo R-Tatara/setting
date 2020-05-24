@@ -1,0 +1,125 @@
+{
+//テキストエディター
+	"editor.comments.insertSpace": false,
+	"editor.renderWhitespace": "boundary",
+	//ミニマップ
+	"editor.minimap.renderCharacters": false,
+	"editor.minimap.showSlider": "always",
+	//ファイル
+	"files.encoding": "shiftjis",
+	"files.trimTrailingWhitespace": true,
+//ワークベンチ
+	"workbench.startupEditor": "newUntitledFile",
+	//外観
+	"workbench.colorCustomizations": {
+		"tab.activeBorder": "#66d9ef",
+		"statusBar.background": "#444444",
+		"statusBar.noFolderBackground": "#444444",
+		"statusBar.debuggingBackground": "#444444"
+	},
+	"workbench.colorTheme": "Dark (Molokai)",
+//ウィンドウ
+//機能
+	//拡張機能
+	"extensions.autoCheckUpdates": false,
+	"extensions.autoUpdate": false,
+	"extensions.ignoreRecommendations": true,
+	"extensions.showRecommendationsOnlyOnDemand": true,
+//アプリケーション
+	//更新
+	"update.enableWindowsBackgroundUpdates": false,
+	"update.mode": "none",
+	"update.showReleaseNotes": false,
+//拡張機能
+	//Grunt
+	"grunt.autoDetect": "off",
+	//Gulp
+	"gulp.autoDetect": "off",
+	//Jake
+	"jake.autoDetect": "off",
+	//Npm
+	"npm.autoDetect": "off",
+	//Todo Tree
+	"todo-tree.tree.showScanModeButton": false,
+	//TypeScript
+	"typescript.tsc.autoDetect": "off",
+	//Vim
+	"vim.easymotion": true,
+	"vim.easymotionKeys": "asdfhjklweuio",
+	"vim.foldfix": true,
+	"vim.hlsearch": true,
+	"vim.incsearch": true,
+	"vim.leader": "<space>",
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{"before": ["<Esc>"],					"commands": [":nohl"]},
+		{"before": ["<Enter>"],					"after": ["i", "<Enter>"]},
+		//Yank
+		{"before": ["Y"],						"after": ["y", "$"]},
+		{"before": ["leader", "y"],				"after": ["\"", "z", "y"]},
+		{"before": ["leader", "p"],				"after": ["\"", "z", "p"]},
+		//Delete
+		{"before": ["x"],						"after": ["\"", "_", "x"]},
+		{"before": ["<Del>"],					"after": ["\"", "_", "x"]},
+		{"before": ["<BS>"],					"after": ["h", "\"", "_", "x"]},
+		//Cursor moving
+		{"before": ["leader", "h"],				"after": ["^"]},
+		{"before": ["leader", "l"],				"after": ["$"]},
+		{"before": ["leader", "j"],				"after": ["G"]},
+		{"before": ["leader", "k"],				"after": ["g", "g"]},
+		//Center of display
+		{"before": ["n"],						"after": ["n", "z", "z"]},
+		{"before": ["N"],						"after": ["N", "z", "z"]},
+		{"before": ["g*"],						"after": ["g", "*", "z", "z"]},
+		{"before": ["g#"],						"after": ["g", "#", "z", "z"]},
+		{"before": ["*"],						"after": ["*", "z", "z"]},
+		{"before": ["#"],						"after": ["#", "z", "z"]},
+		//Vim-Easymotion
+		{"before": ["s"],						"after": ["m", "z", "leader", "leader", "2", "s"]},
+		{"before": ["leader", "s"],				"after": ["m", "z", "leader", "leader", "s"]},
+		{"before": ["leader", "leader", "s"],	"after": ["m", "z", "leader", "leader", "s"]},
+		{"before": ["leader", "m"],				"after": ["`", "z"]},
+		//Bookmark
+		{"before": ["leader", "b"],				"commands": ["bookmarks.toggle"]},
+		{"before": ["leader", "B"],				"commands": ["bookmarks.list"]},
+	],
+	"vim.useSystemClipboard": true,
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{"before": ["<Enter>"],					"after": ["\"", "_", "x", "i", "<Enter>"]},
+		//Repetitive put
+		{"before": ["p"],						"after": ["\"", "_", "d", "P"]},
+		//Yank
+		{"before": ["g", "y"],					"after": ["y", "`", ">"]},
+		{"before": ["leader", "y"],				"after": ["\"", "z", "y"]},
+		{"before": ["leader", "p"],				"after": ["\"", "_", "d", "\"", "z", "p"]},
+		//Delete
+		{"before": ["x"],						"after": ["\"", "_", "x"]},
+		{"before": ["<Del>"],					"after": ["\"", "_", "x"]},
+		{"before": ["<BS>"],					"after": ["\"", "_", "x"]},
+		//Cursor moving
+		{"before": ["leader", "h"],				"after": ["^"]},
+		{"before": ["leader", "l"],				"after": ["$"]},
+		{"before": ["leader", "j"],				"after": ["G"]},
+		{"before": ["leader", "k"],				"after": ["g", "g"]},
+		//Center of display
+		{"before": ["n"],						"after": ["n", "z", "z"]},
+		{"before": ["N"],						"after": ["N", "z", "z"]},
+		{"before": ["g*"],						"after": ["g", "*", "z", "z"]},
+		{"before": ["g#"],						"after": ["g", "#", "z", "z"]},
+		{"before": ["*"],						"after": ["*", "z", "z"]},
+		{"before": ["#"],						"after": ["#", "z", "z"]},
+		//Indent
+		{"before": [">"],						"commands": ["editor.action.indentLines"]},
+		{"before": ["<"],						"commands": ["editor.action.outdentLines"]},
+		//Comment
+		{"before": ["leader", "c"],				"after": ["I", "/", "/", "<Esc>"]},
+		//{"before": ["leader", "c"],				"after": ["I", "#", "<space>", "<Esc>"]},
+		//Vim-Easymotion
+		{"before": ["s"],						"after": ["<Esc>", "m", "z", "g", "v", "leader", "leader", "2", "s"]},
+		{"before": ["v", "s"],					"after": ["<Esc>", "m", "z", "g", "v", "leader", "leader", "2", "s"]},
+		{"before": ["V", "s"],					"after": ["<Esc>", "m", "z", "g", "v", "leader", "leader", "2", "s"]},
+		{"before": ["leader", "s"],				"after": ["<Esc>", "m", "z", "g", "v", "leader", "leader", "s"]},
+		{"before": ["leader", "leader", "s"],	"after": ["<Esc>", "m", "z", "g", "v", "leader", "leader", "s"]},
+		{"before": ["leader", "m"],				"after": ["`", "z"]},
+	],
+	"vim.whichwrap": "b,s,h,l,<,>,[,],~",
+}
