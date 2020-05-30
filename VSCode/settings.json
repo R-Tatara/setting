@@ -1,6 +1,7 @@
 {
 //テキストエディター
 	"editor.comments.insertSpace": false,
+	"editor.mouseWheelZoom": true,
 	"editor.renderWhitespace": "boundary",
 	//ミニマップ
 	"editor.minimap.renderCharacters": false,
