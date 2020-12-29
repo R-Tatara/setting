@@ -1,65 +1,67 @@
 {
-//ÉeÉLÉXÉgÉGÉfÉBÉ^Å[
-	"editor.comments.insertSpace": false,
-	"editor.mouseWheelZoom": true,
-	"editor.renderWhitespace": "boundary",
-	"editor.wordWrap": "on",
-	//É~ÉjÉ}ÉbÉv
-	"editor.minimap.renderCharacters": false,
-	//ÉtÉ@ÉCÉã
-	"files.encoding": "shiftjis",
-	"files.trimTrailingWhitespace": true,
-//ÉèÅ[ÉNÉxÉìÉ`
-	"workbench.startupEditor": "newUntitledFile",
-	//äOäœ
-	"workbench.colorCustomizations": {
-		"tab.activeBorder": "#66d9ef",
-		"statusBar.background": "#444444",
-		"statusBar.noFolderBackground": "#444444",
-		"statusBar.debuggingBackground": "#444444"
-	},
-	"workbench.colorTheme": "Dark (Molokai)",
-	"workbench.tree.indent": 16,
-//ÉEÉBÉìÉhÉE
-	"window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
-//ã@î\
-	//ägí£ã@î\
-	"extensions.autoCheckUpdates": false,
-	"extensions.autoUpdate": false,
-	"extensions.ignoreRecommendations": true,
-	"extensions.showRecommendationsOnlyOnDemand": true,
-//ÉAÉvÉäÉPÅ[ÉVÉáÉì
-	//çXêV
-	"update.enableWindowsBackgroundUpdates": false,
-	"update.mode": "none",
-	"update.showReleaseNotes": false,
-//ägí£ã@î\
-	//Grunt
-	"grunt.autoDetect": "off",
-	//Gulp
-	"gulp.autoDetect": "off",
-	//Jake
-	"jake.autoDetect": "off",
-	//Npm
-	"npm.autoDetect": "off",
-	//Todo Tree
-	"todo-tree.tree.showScanModeButton": false,
-	//TypeScript
-	"typescript.tsc.autoDetect": "off",
-	//Vim
+	//Update: 2020/12/16
+
+//„ÉÜ„Ç≠„Çπ„Éà„Ç®„Éá„Ç£„Çø„Éº
+    "editor.comments.insertSpace": false,
+    "editor.mouseWheelZoom": true,
+    "editor.renderWhitespace": "boundary",
+    //„Éü„Éã„Éû„ÉÉ„Éó
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.showSlider": "always",
+    //„Éï„Ç°„Ç§„É´
+    "files.encoding": "shiftjis",
+    "files.trimTrailingWhitespace": true,
+//„ÉØ„Éº„ÇØ„Éô„É≥„ÉÅ
+"workbench.startupEditor": "newUntitledFile",
+    //Â§ñË¶≥
+    "workbench.colorCustomizations": {
+        "tab.activeBorder": "#66d9ef",
+        "statusBar.background": "#444444",
+        "statusBar.noFolderBackground": "#444444",
+        "statusBar.debuggingBackground": "#444444"
+    },
+    "workbench.colorTheme": "Dark (Molokai)",
+//„Ç¶„Ç£„É≥„Éâ„Ç¶
+//Ê©üËÉΩ
+    //Êã°ÂºµÊ©üËÉΩ
+    "extensions.autoCheckUpdates": false,
+    "extensions.autoUpdate": false,
+    "extensions.ignoreRecommendations": true,
+    "extensions.showRecommendationsOnlyOnDemand": true,
+//„Ç¢„Éó„É™„Ç±„Éº„Ç∑„Éß„É≥
+    //Êõ¥Êñ∞
+    "update.enableWindowsBackgroundUpdates": false,
+    "update.mode": "none",
+    "update.showReleaseNotes": false,
+//Êã°ÂºµÊ©üËÉΩ
+    //Grunt
+    "grunt.autoDetect": "off",
+    //Gulp
+    "gulp.autoDetect": "off",
+    //Jake
+    "jake.autoDetect": "off",
+    //Npm
+    "npm.autoDetect": "off",
+    //Todo Tree
+    "todo-tree.tree.showScanModeButton": false,
+    //TypeScript
+    "typescript.tsc.autoDetect": "off",
+    //Vim
 	"vim.easymotion": true,
 	"vim.easymotionKeys": "asdfhjklweuio",
 	"vim.foldfix": true,
 	"vim.hlsearch": true,
 	"vim.incsearch": true,
-	"vim.leader": "<space>",
-	"vim.normalModeKeyBindingsNonRecursive": [
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
 		{"before": ["<Esc>"],					"commands": [":nohl"]},
 		{"before": ["<Enter>"],					"after": ["i", "<Enter>"]},
+		{"before": ["leader", "w"],				"after": [":", "w", "<Enter>"]},
 		//Yank
 		{"before": ["Y"],						"after": ["y", "$"]},
 		{"before": ["leader", "y"],				"after": ["\"", "z", "y"]},
 		{"before": ["leader", "p"],				"after": ["\"", "z", "p"]},
+		{"before": ["leader", "P"],				"after": ["\"", "z", "P"]},
 		//Delete
 		{"before": ["x"],						"after": ["\"", "_", "x"]},
 		{"before": ["<Del>"],					"after": ["\"", "_", "x"]},
@@ -85,7 +87,7 @@
 		{"before": ["leader", "b"],				"commands": ["bookmarks.toggle"]},
 		{"before": ["leader", "B"],				"commands": ["bookmarks.list"]},
 	],
-	"vim.useSystemClipboard": true,
+    "vim.useSystemClipboard": true,
 	"vim.visualModeKeyBindingsNonRecursive": [
 		{"before": ["<Enter>"],					"after": ["\"", "_", "x", "i", "<Enter>"]},
 		//Repetitive put
@@ -93,7 +95,7 @@
 		//Yank
 		{"before": ["g", "y"],					"after": ["y", "`", ">"]},
 		{"before": ["leader", "y"],				"after": ["\"", "z", "y"]},
-		{"before": ["leader", "p"],				"after": ["\"", "_", "d", "\"", "z", "p"]},
+		{"before": ["leader", "p"],				"after": ["\"", "_", "d", "\"", "z", "P"]},
 		//Delete
 		{"before": ["x"],						"after": ["\"", "_", "x"]},
 		{"before": ["<Del>"],					"after": ["\"", "_", "x"]},
@@ -126,3 +128,7 @@
 	],
 	"vim.whichwrap": "b,s,h,l,<,>,[,],~",
 }
+
+
+
+

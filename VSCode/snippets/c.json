@@ -1,0 +1,222 @@
+{
+	//Update: 2020/12/29
+
+	//for work
+	/*
+	"for": {
+		"prefix": "for",
+		"body": [
+			"for (${1:int} ${2:i} = 0; ${2:i} < ${3:length}; ++${2:i})",
+			"{",
+			"\t${0:}",
+			"}"
+			],
+		"description": "for loop snippet"
+	},
+
+	"forr": {
+		"prefix": "forr",
+		"body": [
+			"for (${1:int} ${2:i} = ${3:length} - 1; ${2:i} >= 0; --${2:i})",
+			"{",
+			"\t${0:}",
+			"}"
+			],
+		"description": "for reverse loop snippet"
+	},
+
+	"while": {
+		"prefix": "while",
+		"body": [
+			"while (${1:condition})",
+			"{",
+			"\t${0:}",
+			"}"
+			],
+		"description": "while loop snippet"
+	},
+
+	"if": {
+		"prefix": "if",
+		"body": [
+			"if(${1:condition})",
+			"{",
+			"\t${0:}",
+			"}",
+			],
+		"description": "if statement snippet"
+	},
+
+	"else if": {
+		"prefix": "else if",
+		"body": [
+			"else if(${1:condition})",
+			"{",
+			"\t${0:}",
+			"}",
+			],
+		"description": "else if statement snippet"
+	},
+
+	"else": {
+		"prefix": "else",
+		"body": [
+			"else",
+			"{",
+			"\t${0:}",
+			"}",
+			],
+		"description": "else statement snippet"
+	},
+
+	"switch": {
+		"prefix": "switch",
+		"body": [
+			"switch (${1:condition})",
+			"{",
+			"case:${2:constant_expression}",
+			"\t${0:}",
+			"\tbreak;",
+			"default:",
+			"\tbreak;",
+			"}"
+			],
+		"description": "switch statement snippet"
+	},
+
+	"struct": {
+		"prefix": "struct",
+		"body": [
+			"typedef struct",
+			"{",
+			"\t${0:}",
+			"}${1:name}",
+			],
+		"description": "struct code snippet"
+	},
+
+	"printf": {
+		"prefix": "printf",
+		"body": [
+			"printf(\"%${1:d}\\n\", ${2:variable});${0:}",
+			],
+		"description": "printf code snippet"
+	},
+
+	"function": {
+		"prefix": "function",
+		"body": [
+			"${1:void} ${2:name} (${3:})",
+			"{",
+			"\t${0:}",
+			"\treturn;",
+			"}",
+			],
+		"description": "function code snippet"
+	},
+	*/
+
+	//for home
+	"for": {
+		"prefix": "for",
+		"body": [
+			"for (${1:int} ${2:i} = 0; ${2:i} < ${3:length}; ${2:i}++) {",
+			"\t${0:}",
+			"}"
+			],
+		"description": "for loop snippet"
+	},
+
+	"forr": {
+		"prefix": "forr",
+		"body": [
+			"for (${1:int} ${2:i} = ${3:length} - 1; ${2:i} >= 0; ${2:i}--) {",
+			"\t${0:}",
+			"}"
+			],
+		"description": "for reverse loop snippet"
+	},
+
+	"while": {
+		"prefix": "while",
+		"body": [
+			"while (${1:condition}) {",
+			"\t${0:}",
+			"}"
+			],
+		"description": "while loop snippet"
+	},
+
+	"if": {
+		"prefix": "if",
+		"body": [
+			"if(${1:condition}) {",
+			"\t${0:}",
+			"}",
+			],
+		"description": "if statement snippet"
+	},
+
+	"else if": {
+		"prefix": "else if",
+		"body": [
+			"else if(${1:condition}) {",
+			"\t${0:}",
+			"}",
+			],
+		"description": "else if statement snippet"
+	},
+
+	"else": {
+		"prefix": "else",
+		"body": [
+			"else {",
+			"\t${0:}",
+			"}",
+			],
+		"description": "else statement snippet"
+	},
+
+	"switch": {
+		"prefix": "switch",
+		"body": [
+			"switch (${1:condition}) {",
+			"case:${2:constant_expression}",
+			"\t${0:}",
+			"\tbreak;",
+			"default:",
+			"\tbreak;",
+			"}"
+			],
+		"description": "switch statement snippet"
+	},
+
+	"struct": {
+		"prefix": "struct",
+		"body": [
+			"typedef struct {",
+			"\t${0:}",
+			"}${1:name}",
+			],
+		"description": "struct code snippet"
+	},
+
+	"printf": {
+		"prefix": "printf",
+		"body": [
+			"printf(\"%${1:d}\\n\", ${2:variable});${0:}",
+			],
+		"description": "printf code snippet"
+	},
+
+	"function": {
+		"prefix": "function",
+		"body": [
+			"${1:void} ${2:name} (${3:}) {",
+			"\t${0:}",
+			"\treturn;",
+			"}",
+			],
+		"description": "function code snippet"
+	},
+}
